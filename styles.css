@@ -18,9 +18,8 @@ body {
 }
 
 .logo img {
-    max-height: 100px; /* Ajustez la hauteur selon vos besoins */
+    width: 100%; /* L'image prend toute la largeur du conteneur */
     height: auto;
-    width: auto;
 }
 
 .container {
