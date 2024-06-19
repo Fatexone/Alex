@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fond de la page en noir */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff; /* Couleur du texte en blanc pour la lisibilité */
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff; /* Fond blanc pour le logo */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionnel : pour ajouter une ombre sous le logo */
+}
+
+.logo img {
+    max-height: 100px; /* Ajustez la hauteur selon vos besoins */
+    height: auto;
+    width: auto;
+}
+
+.container {
+    background-color: #333; /* Utilisez une couleur de fond plus foncée pour le conteneur */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajustez l'ombre pour qu'elle soit visible sur fond noir */
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #fff; /* Couleur du texte en blanc pour la lisibilité */
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+select, input[type="checkbox"], button {
+    margin: 10px 0;
+    color: #000; /* Couleur du texte en noir pour les éléments de formulaire */
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+#bienDetails {
+    text-align: center; /* Centrer le texte */
+    margin-top: 20px;
+}

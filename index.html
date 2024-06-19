@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benattar Immobilier - Alexandre</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcq0Gvpuaab4UMMkdC6nzg83E0Jv7KuXE&libraries=places,directions&callback=initMap"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="benben.png" alt="Logo">
+    </div>
+    <div class="container">
+        <h1>Benattar Immobilier</h1>
+        <div id="pays">
+            <h2>Choisissez un pays</h2>
+            <select id="paysSelect" onchange="displayVilles()">
+                <option value="">--Sélectionner un pays--</option>
+                <option value="france">France</option>
+                <option value="maroc">Maroc</option>
+            </select>
+        </div>
+        <div id="villes">
+            <h2>Choisissez une ville</h2>
+            <select id="villeSelect" onchange="displayBiens()">
+                <option value="">--Sélectionner une ville--</option>
+                <!-- Les options seront ajoutées dynamiquement -->
+            </select>
+        </div>
+        <div id="biens">
+            <h2>Choisissez un bien</h2>
+            <select id="bienSelect" onchange="displayBien()">
+                <option value="">--Sélectionner un bien--</option>
+                <!-- Les options seront ajoutées dynamiquement -->
+            </select>
+        </div>
+        <div id="bienDetails"></div>
+        <div id="map" style="height: 400px;"></div>
+        <div id="commerces">
+            <h2>Choisissez un type de commerce</h2>
+            <input type="radio" id="ecoles" name="commerces" value="school">
+            <label for="ecoles">Écoles</label>
+            <input type="radio" id="boulangeries" name="commerces" value="bakery">
+            <label for="boulangeries">Boulangeries</label>
+            <input type="radio" id="garagistes" name="commerces" value="car_repair">
+            <label for="garagistes">Garagistes</label>
+            <input type="radio" id="transports" name="commerces" value="transit_station">
+            <label for="transports">Transports</label>
+            <input type="radio" id="stations_service" name="commerces" value="gas_station">
+            <label for="stations_service">Stations-service</label>
+            <input type="radio" id="synagogues" name="commerces" value="synagogue">
+            <label for="synagogues">Synagogues</label>
+            <input type="radio" id="eglises" name="commerces" value="church">
+            <label for="eglises">Églises</label>
+            <input type="radio" id="mosquees" name="commerces" value="mosque">
+            <label for="mosquees">Mosquées</label>
+            <input type="radio" id="salles_sport" name="commerces" value="gym">
+            <label for="salles_sport">Salles de sport</label>
+            <input type="radio" id="commissariats" name="commerces" value="police">
+            <label for="commissariats">Commissariats</label>
+            <!-- Ajouter les autres options de commerce ici -->
+            <button onclick="displayCommerces()">Afficher</button>
+        </div>
+        <div id="commercesList"></div>
+        <button onclick="resetSelection()">Retour</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

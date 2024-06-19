@@ -1,0 +1,14 @@
+{
+  "name": "alexandre",
+  "version": "1.0.0",
+  "description": "Projet Alexandre pour Benatar Immobilier",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
